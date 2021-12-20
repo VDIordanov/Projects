@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="main">
+        <span class="appTitle">Calc<span>.</span></span>
+        <div class="result-container">
+            <span id="calc">0</span>
+            <span id="result">0</span>
+        </div>
+        <div class="key-container">
+            <div class="row">
+                <div class="key light" id="clearAll">C</div>
+                <div class="key light" id="backSpace"><i class="fas fa-backspace"></i></div>
+                <div class="key light operatorKey">%</div>
+                <div class="key operatorKey" id="division">/</div>
+            </div>
+            <div class="row">
+                <div class="key numberOfKey">7</div>
+                <div class="key numberOfKey">8</div>
+                <div class="key numberOfKey">9</div>
+                <div class="key operatorKey" id="multiply">*</div>
+            </div>
+            <div class="row">
+                <div class="key numberOfKey">4</div>
+                <div class="key numberOfKey">5</div>
+                <div class="key numberOfKey">6</div>
+                <div class="key operatorKey" id="plus">+</div>
+            </div>
+            <div class="row">
+                <div class="key numberOfKey">1</div>
+                <div class="key numberOfKey">2</div>
+                <div class="key numberOfKey">3</div>
+                <div class="key operatorKey" id="subtract">-</div>
+            </div>
+            <div class="row">
+                <div class="key light numberOfKey">00</div>
+                <div class="key numberOfKey">0</div>
+                <div class="key light numberOfKey">.</div>
+                <div class="key" id="equal">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="./styles/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Mono';
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0f0f0f;
+  color: #ffffff;
+}
+
+.main {
+  width: 350px;
+  border-radius: 25px;
+  background-color: #777777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.main .appTitle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 20px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.main span {
+  color: #ff3e39;
+}
+
+.main .result-container {
+  height: 150;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .result-container #calc {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.main .result-container #result {
+  font-size: 40px;
+}
+
+.main .key-container {
+  background-color: #242323;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.main .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .row .key {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.main .row .key#division {
+  color: #ff3e39;
+}
+
+.main .row .key#multiply {
+  color: #ff3e39;
+}
+
+.main .row .key#plus {
+  color: #ff3e39;
+}
+
+.main .row .key#subtract {
+  color: #ff3e39;
+}
+
+.main .row .key#equal {
+  background-color: #ff3e39;
+  -webkit-box-shadow: 0 0 0 3px #ff404948;
+          box-shadow: 0 0 0 3px #ff404948;
+}
+
+.main .row .key.light {
+  color: #979595;
+}
+
+.main .row .key.light:hover {
+  color: #fafafa;
+}
+
+.main .row .key:hover {
+  background-color: #151515;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto+Mono&display=swap');
+@import "./variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg--dark;
+    color: $key--color;
+}
+.main{
+    width: 350px;
+    border-radius: 25px;
+    background-color: $calc--color;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    .appTitle{
+        align-self: center;
+        margin-top: 20px;
+        font-size: 15px;
+        letter-spacing: 2px;
+        color: $key--color;
+    }
+
+    span{
+        color: $primary;
+    }
+
+    .result-container{
+        height: 150;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        #calc{
+            font-size: 20px;
+            margin-bottom: 10px;
+            color:$key--color;
+        }
+        #result{
+            font-size: 40px;
+        }
+    }
+
+    .key-container{
+        background-color: $color--light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .row{
+        display: flex;
+
+        .key{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &#division{
+                color: $primary;
+            }
+    
+            &#multiply{
+                color: $primary;
+            }
+    
+            &#plus{
+                color: $primary;
+            }
+    
+            &#subtract{
+                color: $primary;
+            }
+    
+            &#equal{
+                background-color: $primary;
+                box-shadow: 0 0 0 3px #ff404948;
+            }
+    
+            &.light{
+                color: $bgKeys--light;
+                
+                &:hover{
+                    color:$bgResult--light;
+                }
+            }
+
+            &:hover{
+                background-color:$bgResult--dark;
+                color:$key--color;
+            }
+        }
+    }
+}

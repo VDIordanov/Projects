@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Architects Daughter', cursive;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quiz-container {
+  background-color: #FFF;
+  width: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px 5px black;
+          box-shadow: 0 0 5px 5px black;
+  overflow: hidden;
+}
+
+.quiz-container .quiz-content {
+  padding: 2rem;
+}
+
+.quiz-container .quiz-content h2 {
+  margin: 0;
+}
+
+.quiz-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quiz-container ul li {
+  margin: 1rem 0;
+}
+
+.quiz-container ul li label {
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+  display: block;
+  padding: 1rem;
+  font-family: inherit;
+  border: none;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: radial-gradient(circle, #eeaeca 0%, #0a1625 100%);
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */

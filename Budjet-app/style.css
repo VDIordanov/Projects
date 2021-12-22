@@ -149,13 +149,21 @@ input[type=number] {
   font-family: 'Gilroy Bold';
 }
 
+.budget-dashboard input {
+  /* MAKE INPUT SELECTABLE */
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+}
+
 .toggle {
   display: block;
   margin-top: 30px;
   margin-left: 20px;
 }
 
-.toggle .tab1, .tab2, .tab3 {
+.toggle .tab1 {
   display: inline-block;
   cursor: pointer;
   font-size: 1.1em;
@@ -164,7 +172,23 @@ input[type=number] {
   opacity: 0.4;
 }
 
-.toggle .tab2, .tab3 {
+.toggle .tab2 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #1a0034;
+  font-family: 'Gilroy Bold';
+  opacity: 0.4;
+  margin-left: 10px;
+}
+
+.toggle .tab3 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #1a0034;
+  font-family: 'Gilroy Bold';
+  opacity: 0.4;
   margin-left: 10px;
 }
 
@@ -174,14 +198,6 @@ input[type=number] {
 
 .hide {
   display: none;
-}
-
-.budget-dashboard input {
-  /* MAKE INPUT SELECTABLE */
-  -webkit-user-select: auto;
-  -moz-user-select: auto;
-  -ms-user-select: auto;
-  user-select: auto;
 }
 
 /* ////////// ALL ///////////// */
